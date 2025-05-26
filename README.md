@@ -1,12 +1,94 @@
-# React + Vite
+# Healthcare Dashboard (React - Static Display)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design Reference](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
 
-Currently, two official plugins are available:
+## 📋 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a static, pixel-perfect implementation of a **Healthcare Dashboard** built using React and styled with CSS. It is based on the design provided in the assignment and serves as a demonstration of UI implementation, reusable components, and responsiveness.
 
-## Expanding the ESLint configuration
+> **Note:** This is a static representation with mock data only. No interactivity or dynamic state management is implemented.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+
+- **React** (via Vite)
+- **CSS / Flexbox / CSS Grid**
+- **Lucide React / Font Awesome** (for icons)
+- **Responsive Design** (Mobile, Tablet, Desktop)
+- **Open-Source Images / Illustrations**
+
+---
+
+## 📁 Folder Structure
+
+healthcare-dashboard/
+├── public/
+├── src/
+│ ├── assets/ # Images, SVGs
+│ ├── components/ # Reusable React Components
+│ │ ├── Header/
+│ │ ├── Sidebar/
+│ │ ├── DashboardMainContent/
+│ │ ├── DashboardOverview/
+│ │ ├── AnatomySection/
+│ │ ├── HealthStatusCards/
+│ │ ├── CalendarView/
+│ │ ├── UpcomingSchedule/
+│ │ ├── ActivityFeed/
+│ │ ├── SimpleAppointmentCard/
+│ ├── data/ # Static mock data files
+│ ├── App.jsx
+│ ├── index.js
+│ └── styles/
+│ ├── globals.css
+│ └── component-specific CSS files
+├── README.md
+├── package.json
+├── vite.config.js
+└── .gitignore
+
+yaml
+Copy
+Edit
+
+---
+
+## 📌 Features
+
+- 📐 **Pixel-perfect design** based on the provided UI image.
+- 🧱 Modular & Reusable **React Components**.
+- 📊 Static mock data from JS files.
+- 📱 **Fully Responsive** across devices.
+- 🌈 Accurate use of **color palettes**, **spacing**, **typography**, and **icons**.
+- 🔒 **No dynamic interactivity** (as per requirement).
+
+---
+
+## 🚀 Deployment
+
+Hosted on [Vercel / Netlify / GitHub Pages]  
+🔗 **Live Link**: [Add your deployed URL here]  
+📁 **GitHub Repo**: [Add your repo link here]
+
+---
+
+## 📄 Resume
+
+My resume is available separately in a public GitHub repo as instructed:  
+🔗 **Resume Repository**: [https://github.com/yourusername/Resume](https://github.com/yourusername/Resume)
+
+---
+
+## 👨‍💻 Author
+
+- **Full Name**: Veerabhadra Sai Amarnath Amudalapalli  
+- 📧 **Email**: [your.email@example.com]  
+- 📞 **Phone**: [your phone number]  
+- 🌐 **Portfolio**: [optional if available]
+
+---
+
+## 📜 License
+
+This project is part of a coding assignment and is not intended for commercial use.

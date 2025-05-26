@@ -1,0 +1,193 @@
+.dashboard-main {
+  padding: 10px 32px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.dashboard-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: start;
+  flex: 1;
+  min-height: 0;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.top-left-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.anatomy,
+.health-cards,
+.calendar,
+.activity-feed,
+.upcoming-schedule {
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.anatomy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 160px;
+  height: 320px;
+  min-width: 160px;
+}
+
+.anatomy-img {
+  max-width: 100%;
+  border-radius: 6px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.health-cards {
+  background-color: #f5f8fd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.card-icon {
+  background-color: white;
+  border-radius: 6px;
+  padding: 6px;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #4e5873;
+  margin: 0 0 4px 0;
+  font-size: 13px;
+}
+
+.card-value {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+.activity-feed {
+  width: 100%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.calendar {
+  min-height: 350px;
+  flex: 1;
+  overflow: auto;
+}
+
+.upcoming-schedule {
+  flex: 1;
+  overflow: auto;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-main {
+    padding: 10px;
+  }
+
+  .dashboard-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .top-left-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .anatomy {
+    flex: 0 0 160px;
+    height: 300px;
+    min-width: auto;
+  }
+
+  .health-cards {
+    flex: 0 0 auto;
+    min-width: auto;
+  }
+
+  .activity-feed,
+  .calendar,
+  .upcoming-schedule {
+    width: 100%;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}

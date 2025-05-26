@@ -1,0 +1,93 @@
+.upcoming-schedule {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f5f8fd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.schedule-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.schedule-day {
+  margin-bottom: 20px;
+}
+
+.day-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.appointments-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.appointment-card {
+  background-color: #dbeafe;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  width:fit-content;
+}
+
+.appointment-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.appointment-time {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+@media (max-width: 767px) {
+  .upcoming-schedule {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .schedule-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .schedule-day {
+    margin-bottom: 16px;
+  }
+
+  .day-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .appointments-row {
+    gap: 12px;
+  }
+
+  .appointment-card {
+    padding: 10px 12px;
+    border-radius: 6px;
+    max-width: 100%; 
+    flex: 1 1 auto;  
+  }
+
+  .appointment-title {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .appointment-time {
+    font-size: 12px;
+  }
+}

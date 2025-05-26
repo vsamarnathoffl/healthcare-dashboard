@@ -1,0 +1,243 @@
+.calendar-container {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
+  font-family: 'Inter', sans-serif;
+  max-width: 100%;
+  width: 100%;
+  height: min-content;
+  box-sizing: border-box;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.calendar-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.calendar-month {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar-arrow {
+  background-color: #f3f4f6;
+  padding: 6px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-arrow:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.05);
+}
+
+.calendar-arrow:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.calendar-scroll-wrapper {
+  overflow-x: hidden;
+}
+
+.calendar-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 10px;
+}
+
+.calendar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-box {
+  min-width: 45px;
+  max-width: 60px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: #374151;
+}
+
+.calendar-box.blank {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  min-width: 60px;
+}
+
+.calendar-day-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.calendar-date {
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.calendar-appt {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin-top: 4px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.calendar-appt.dentist-appt {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 700;
+}
+
+.calendar-appointments {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.calendar-card {
+  background-color: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-card-title{
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 3px;
+}
+
+.calendar-card-time {
+  font-size: 12px;
+  color: #4b5563;
+  margin-bottom: 3px;
+}
+.calendar-card-doctor{
+  font-size: 12px;
+}
+
+.calendar-card.navy {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.calendar-card.navy .calendar-card-title,
+.calendar-card.navy .calendar-card-time {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .calendar-container {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .calendar-header-row {
+    margin-bottom: 4px;
+  }
+
+  .calendar-month {
+    font-size: 20px;
+  }
+
+  .calendar-nav {
+    gap: 8px;
+  }
+
+  .calendar-arrow {
+    padding: 4px;
+  }
+
+  .calendar-scroll {
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+
+  .calendar-box {
+    min-width: 38px;
+    max-width: 50px;
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .calendar-box.blank {
+    min-width: 50px;
+  }
+
+  .calendar-day-label {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+
+  .calendar-date {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  .calendar-appt {
+    font-size: 9px;
+    padding: 1.5px 4px;
+    margin-top: 3px;
+  }
+
+  .calendar-appointments {
+    margin-top: 20px;
+    gap: 12px;
+    grid-template-columns: 1fr; /* stack cards vertically on smaller screens */
+  }
+
+  .calendar-card {
+    padding: 8px 10px;
+    border-radius: 12px;
+  }
+
+  .calendar-card-title {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .calendar-card-time,
+  .calendar-card-doctor {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+}

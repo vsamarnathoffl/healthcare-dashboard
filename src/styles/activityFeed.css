@@ -1,0 +1,164 @@
+.activity-feed {
+  font-family: 'Inter', sans-serif;
+  padding: 16px;
+  max-width: 1000px;
+  border-radius: 12px;
+  background-color: #f5f8fd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.activity-feed h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.activity-feed p {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: flex-end;
+  gap: 8px; 
+  background: #f9fafb;
+  padding: 8px 6px; 
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  flex-wrap: nowrap; 
+  overflow: hidden; 
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px; 
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+.bars {
+  display: flex;
+  gap: 4px;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.bar {
+  width: auto; 
+  flex-grow: 1;
+  max-width: 8px; 
+  min-width: 3px;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.bar.transparent {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+}
+
+.bar.teal {
+  background-color: #14b8a6;
+}
+
+.bar.navy {
+  background-color: #1e40af;
+}
+
+.bar.half-teal-navy {
+  background: linear-gradient(to top, #1e40af 50%, #14b8a6 50%);
+}
+
+.day-label {
+  font-size: 11px; 
+  font-weight: 500;
+  color: #4b5563;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .activity-feed {
+    width:75vw;
+    padding: 8px !important;
+  }
+
+  .activity-feed h4 {
+    font-size: 18px;
+  }
+
+  .activity-feed p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .bar-chart {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .day {
+    min-width: 28px;
+    gap: 5px;
+  }
+
+  .bars {
+    gap: 3px;
+  }
+
+  .bar {
+    max-width: 7px;
+    min-width: 2.5px;
+  }
+
+  .day-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-feed {
+    padding: 8px 6px;
+  }
+
+  .activity-feed h4 {
+    font-size: 16px;
+  }
+
+  .activity-feed p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .bar-chart {
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .day {
+    min-width: 24px;
+    gap: 4px;
+  }
+
+  .bars {
+    gap: 2px;
+  }
+
+  .bar {
+    max-width: 6px;
+    min-width: 2px;
+  }
+
+  .day-label {
+    font-size: 9px;
+  }
+}

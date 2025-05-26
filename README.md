@@ -1,8 +1,7 @@
 # Healthcare Dashboard (React - Static Display)
 
-![Design Reference](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
 
-## 📋 Project Overview
+## Project Overview
 
 This project is a static, pixel-perfect implementation of a **Healthcare Dashboard** built using React and styled with CSS. It is based on the design provided in the assignment and serves as a demonstration of UI implementation, reusable components, and responsiveness.
 
@@ -10,7 +9,7 @@ This project is a static, pixel-perfect implementation of a **Healthcare Dashboa
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **React** (via Vite)
 - **CSS / Flexbox / CSS Grid**
@@ -20,8 +19,8 @@ This project is a static, pixel-perfect implementation of a **Healthcare Dashboa
 
 ---
 
-## 📁 Folder Structure
-
+## Folder Structure
+```
 healthcare-dashboard/
 ├── public/
 ├── src/
@@ -29,11 +28,10 @@ healthcare-dashboard/
 │ ├── components/ # Reusable React Components
 │ │ ├── Header/
 │ │ ├── Sidebar/
-│ │ ├── DashboardMainContent/
-│ │ ├── DashboardOverview/
-│ │ ├── AnatomySection/
+│ │ ├── Dashboard/
+│ │ ├── Anatomy/
 │ │ ├── HealthStatusCards/
-│ │ ├── CalendarView/
+│ │ ├── Calendar/
 │ │ ├── UpcomingSchedule/
 │ │ ├── ActivityFeed/
 │ │ ├── SimpleAppointmentCard/
@@ -47,48 +45,43 @@ healthcare-dashboard/
 ├── package.json
 ├── vite.config.js
 └── .gitignore
-
-yaml
-Copy
-Edit
+```
 
 ---
 
-## 📌 Features
+## Features
 
-- 📐 **Pixel-perfect design** based on the provided UI image.
-- 🧱 Modular & Reusable **React Components**.
-- 📊 Static mock data from JS files.
-- 📱 **Fully Responsive** across devices.
-- 🌈 Accurate use of **color palettes**, **spacing**, **typography**, and **icons**.
-- 🔒 **No dynamic interactivity** (as per requirement).
-
----
-
-## 🚀 Deployment
-
-Hosted on [Vercel / Netlify / GitHub Pages]  
-🔗 **Live Link**: [Add your deployed URL here]  
-📁 **GitHub Repo**: [Add your repo link here]
+- **Pixel-perfect design** based on the provided UI image.
+- Modular & Reusable **React Components**.
+- Static mock data from JS files.
+- **Fully Responsive** across devices.
+- Accurate use of **color palettes**, **spacing**, **typography**, and **icons**.
+- **No dynamic interactivity** (as per requirement).
 
 ---
 
-## 📄 Resume
+## Deployment
+
+Hosted on Vercel  
+**Live Link**: https://healthcare-dashboard-vsamarnathoffls-projects.vercel.app/ 
+
+
+---
+
+## Resume
 
 My resume is available separately in a public GitHub repo as instructed:  
-🔗 **Resume Repository**: [https://github.com/yourusername/Resume](https://github.com/yourusername/Resume)
+**Resume Repository**: https://github.com/vsamarnathoffl/Resume
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 - **Full Name**: Veerabhadra Sai Amarnath Amudalapalli  
-- 📧 **Email**: [your.email@example.com]  
-- 📞 **Phone**: [your phone number]  
-- 🌐 **Portfolio**: [optional if available]
-
+- **Email**: vsamarnathofficial@gmail.com
+  
 ---
 
-## 📜 License
+## License
 
 This project is part of a coding assignment and is not intended for commercial use.

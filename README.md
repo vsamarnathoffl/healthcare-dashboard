@@ -71,7 +71,7 @@ Hosted on Vercel
 ## Resume
 
 My resume is available separately in a public GitHub repo as instructed:  
-**Resume Repository**: https://github.com/vsamarnathoffl/Resume
+**Resume Repository**: https://github.com/vsamarnathoffl/Resume_Amarnath
 
 ---
 
